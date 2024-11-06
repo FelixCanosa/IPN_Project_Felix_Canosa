@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+.thumbnails-container {
+    max-height: 30rem; /* Ajusta esta altura según sea necesario */
+    overflow-y: auto;  /* Permite el desplazamiento vertical */
+  }
+  
+  .container-imagen img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden horizontalmente */
+    height: auto;    /* Mantiene la proporción de las imágenes */
+  }
