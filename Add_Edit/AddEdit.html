@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./Recources/generalCss/General.css">
-    
+
 </head>
+
 <body>
 
     <div class="header_insert">
@@ -24,8 +26,8 @@
             </div>
 
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="text" class="form-control"  aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp">
             </div>
 
             <div class="mb-3">
@@ -37,8 +39,8 @@
             </div>
 
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">ISKU</label>
-              <input type="password" class="form-control" >
+                <label for="exampleInputPassword1" class="form-label">ISKU</label>
+                <input type="text" class="form-control">
             </div>
 
             <div class="mb-3">
@@ -47,8 +49,21 @@
             </div>
 
             <div class="mb-3">
+                <label for="talle" class="form-label">Talle:</label>
+                <select name="talle" id="talle" class="form-select">
+                  <option value="">Seleccione un talle</option>
+                  <option value="XS">Extra pequeño (XS)</option>
+                  <option value="S">Pequeño (S)</option>
+                  <option value="M">Mediano (M)</option>
+                  <option value="L">Grande (L)</option>
+                  <option value="XL">Extra grande (XL)</option>
+                  <option value="XXL">Doble extra grande (XXL)</option>
+                </select>
+              </div>
+
+            <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Cantidad de Stock</label>
-                <input type="number" class="form-control" >
+                <input type="number" class="form-control">
             </div>
 
             <div class="mb-3">
@@ -62,7 +77,7 @@
 
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Marca</label>
-                <input type="text" class="form-control" >
+                <input type="text" class="form-control">
             </div>
 
             <div class="mb-3">
@@ -73,28 +88,97 @@
             <div class="mb-3">
                 <label class="form-label" for="comentario">Comentario: (opcional)</label>
                 <textarea id="comentario" class="form-control" rows="5"></textarea>
-              </div>
+            </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Activo</label>
             </div>
 
+            <hr class="border-dark">
 
+            <h4>Envio</h4>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Disponible para envío</label>
+                <label class="form-check">
+                    <input name="validar1" type="radio" class="form-check-input">
+                    Si
+                </label>
+                <label class="form-check">
+                    <input name="validar1" type="radio" class="form-check-input">
+                    No
+                </label>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Envío a domicilio</label>
+                <label class="form-check">
+                    <input name="validar2" type="radio" class="form-check-input">
+                    Si
+                </label>
+                <label class="form-check">
+                    <input name="validar2" type="radio" class="form-check-input">
+                    No
+                </label>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Retiro en sucursal</label>
+                <label class="form-check">
+                    <input name="validar3" type="radio" class="form-check-input">
+                    Si
+                </label>
+                <label class="form-check">
+                    <input name="validar3" type="radio" class="form-check-input">
+                    No
+                </label>
+            </div>
+
+            <hr class="border-dark">
+
+            <h4>Detalles del empaque</h4>
+
+            <div class="mb-3">
+                <label for="empaquetacion" class="form-label from-sw">Tipo de empaquetación:</label>
+                <select name="empaquetacion" id="empaquetacion" class="form-select">
+                    <option value="">Seleccione una opción</option>
+                    <option value="caja">Caja de cartón</option>
+                    <option value="bolsa">Bolsa</option>
+                    <option value="tubular">Tubular</option>
+                    <option value="sobrepuesto">Sobrepuesto</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="largo" class="form-label">Largo</label>
+                <input placeholder="cm" type="number" id="largo" name="largo" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="ancho" class="form-label">Ancho</label>
+                <input placeholder="cm" type="number" id="ancho" name="ancho" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="alto" class="form-label">Alto</label>
+                <input placeholder="cm" type="number" id="alto" name="alto" class="form-control">
+            </div>
 
             <button type="submit" class="btn btn-primary">Modificar/Agregar</button>
-          </form>
-        
-      </div>
+        </form>
+
+    </div>
 
 
     <div class="footer_insert">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous">
-    </script>
-    <script src="../Recources/JS/Header&Footer.js"></script> 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="../Recources/JS/Header&Footer.js"></script>
 </body>
+
 </html>
