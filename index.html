@@ -2,139 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>list of product</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Recources/generalCss/General.css">
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lista de productos</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Recources/generalCss/General.css">
+
+
 </head>
 
 
 <body>
 
-    <div class="header_insert">
-    </div>
+  <div class="header_insert">
+  </div>
 
-    <main class="container">
+  <main class="container">
     <!-- filters -->
     <form action="" class="badge-light">
 
-            <div class="form-group col-md-4">
-                <label for="" class="form-label">Filtrado por</label>
-                <select name="" id="" class="form-select">
-                    <option value="">articulo</option>
-                    <option value="">producto</option>
-                </select>
-            </div>
+      <div class="form-group col-md-4  pt-2">
+        <label for="" class="form-label">Filtrado por</label>
+        <select name="" id="" class="form-select">
+          <option value="">articulo</option>
+          <option value="">producto</option>
+        </select>
+      </div>
 
-            <div class="form-group col-md-4">
-                <label for="" class="form-label from-sw">Buscar por</label>
-                <select name="" id="" class="form-select">
-                    <option value="">nombre</option>
-                    <option value="">ID</option>
-                    <option value="">ISKU</option>
-                </select>
-            </div>
+      <div class="form-group col-md-4">
+        <label for="" class="form-label from-sw">Buscar por</label>
+        <select name="" id="" class="form-select">
+          <option value="">nombre</option>
+          <option value="">ID</option>
+          <option value="">ISKU</option>
+        </select>
+      </div>
 
-            <div class="form-group col-md-4">
-                <label for="">De la categoria</label>
-                <select name="" id="" class="form-select">
-                    <option value="">Dia</option>
-                    <option value="">Clark</option>
-                </select>
-            </div>
+      <div class="form-group col-md-4">
+        <label for="">De la categoria</label>
+        <select name="" id="" class="form-select">
+          <option value="">Dia</option>
+          <option value="">Clark</option>
+        </select>
+      </div>
 
-            <div class="form-group col-md-4">
-                <label for="">De la Marca</label>
-                <select name="" id="" class="form-select">
-                    <option value="">Cotillon</option>
-                    <option value="">producto</option>
-                </select>
-            </div>
+      <div class="form-group col-md-4">
+        <label for="">De la Marca</label>
+        <select name="" id="" class="form-select">
+          <option value="">Cotillon</option>
+          <option value="">producto</option>
+        </select>
+      </div>
 
-            <div class="form-group col-md-4" role="group">
-                <label class="solid" for="btncheck">Estado del product & articulo <input type="checkbox" class="btn-check ml-4" id="btncheck"></label>
-                
-            </div>
+      <div class="form-group col-md-4" role="group">
+        <label class="solid" for="btncheck">Estado del product & articulo <input type="checkbox" class="btn-check ml-4"
+            id="btncheck"></label>
 
-            <button type="submit" class=" btn btn-primary">Filtrar</button>
-        
+      </div>
+
+      <button type="submit" class=" btn btn-primary pl-2 m-sm-2">Filtrar</button>
+      <button class="btn btn-dark">Agregar</button>
     </form>
 
     <hr>
 
     <table class="table table-striped table-bordered table-hover">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">ISKU</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Categoria</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Articulo</th>
-            <th scope="col">Producto</th>
-            <th scope="col">Detalles</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">001</th>
-            <td>Smartphone Xiaomi Redmi 9</td>
-            <td>KLM1</td>
-            <td>10.000$</td>
-            <td>Electrónica</td>
-            <td>Xiaomi</td>
-            <td>Activo</td>
-            <td>√</td>
-            <td></td>
-            <td><button class="btn btn-primary">ver</button></td>
-          </tr>
-          <tr>
-            <th scope="row">002</th>
-            <td>Laptop Dell Inspiron 15</td>
-            <td>H2K2</td>
-            <td>10.000$</td>
-            <td>Informática</td>
-            <td>Dell</td>
-            <td>Inactivo</td>
-            <td>√</td>
-            <td></td>
-            <td><button class="btn btn-primary">ver</button></td>
-          </tr>
-          <tr>
-            <th scope="row">003</th>
-            <td>Camisa Hombre Adidas</td>
-            <td>FKO3</td>
-            <td>10.000$</td>
-            <td>Ropa</td>
-            <td>Adidas</td>
-            <td>Activo</td>
-            <td></td>
-            <td>√</td>
-            <td><button onclick="SeeProduct()" class="btn btn-primary">ver</button></td>
-          </tr>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">ISKU</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Articulo</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">001</th>
+          <td>Smartphone Xiaomi Redmi 9</td>
+          <td>KLM1</td>
+          <td>10.000$</td>
+          <td>Electrónica</td>
+          <td>Xiaomi</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td><button class="btn btn-primary">ver</button></td>
+        </tr>
+        <tr>
+          <th scope="row">002</th>
+          <td>Laptop Dell Inspiron 15</td>
+          <td>H2K2</td>
+          <td>10.000$</td>
+          <td>Informática</td>
+          <td>Dell</td>
+          <td>Inactivo</td>
+          <td>√</td>
+          <td></td>
+          <td><button class="btn btn-primary">ver</button></td>
+        </tr>
+        <tr>
+          <th scope="row">003</th>
+          <td>Camisa Hombre Adidas</td>
+          <td>FKO3</td>
+          <td>10.000$</td>
+          <td>Ropa</td>
+          <td>Adidas</td>
+          <td>Activo</td>
+          <td></td>
+          <td>√</td>
+          <td><button onclick="SeeProduct()" class="btn btn-primary">ver</button></td>
+        </tr>
 
 
-        </tbody>
-      </table>
+      </tbody>
+    </table>
 
-    </main>
+  </main>
 
-    <div class="footer_insert">
-    </div>
+  <div class="footer_insert">
+  </div>
 
-    <!-- Jquery src -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous">
+  <!-- Jquery src -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="./Recources/JS/Header&Footer.js"></script> 
+  <script src="./Recources/JS/Header&Footer.js"></script>
 </body>
 
 </html>
