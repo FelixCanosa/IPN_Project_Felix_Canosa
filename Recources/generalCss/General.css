@@ -1,13 +1,13 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .thumbnails-container {
-    max-height: 40rem; 
-    overflow-y: auto;  
-  }
-  
-  .container-imagen img {
-    max-width: 100%; 
-    height: auto;    
-  }
+  max-height: 40rem;
+  overflow-y: auto;
+}
+
+.container-imagen img {
+  max-width: 100%;
+  height: auto;
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lista de productos</title>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./Recources/generalCss/General.css">
@@ -25,9 +25,9 @@
 
       <div class="form-group col-md-4  pt-2">
         <label for="" class="form-label">Filtrado por</label>
-        <select name="" id="" class="form-select">
-          <option value="">articulo</option>
-          <option value="">producto</option>
+        <select name="" id="DDFD" class="form-select">
+          <option value="1">articulo</option>
+          <option value="2">producto</option>
         </select>
       </div>
 
@@ -63,7 +63,9 @@
       </div>
 
       <button type="submit" class=" btn btn-primary pl-2 m-sm-2">Filtrar</button>
-      <button class="btn btn-dark">Agregar</button>
+      <a href="./Add_Edit/AddEdit.html"><i id="AddButtonHome" class="btn btn-dark align-items-center ml-5">Agregar</i></a>
+      <button class="btn btn-success"><i class="bi bi-file-earmark-spreadsheet">Descargar</i></button>
+     
     </form>
 
     <hr>
@@ -98,7 +100,7 @@
           <td>√</td>
           <td></td>
           <td>SI</td>
-          <td><button class="btn btn-primary">ver</button></td>
+          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
         </tr>
         <tr>
           <th scope="row">002</th>
@@ -112,7 +114,7 @@
           <td>√</td>
           <td></td>
           <td>NO</td>
-          <td><button class="btn btn-primary">ver</button></td>
+          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
         </tr>
         <tr>
           <th scope="row">003</th>
@@ -126,7 +128,7 @@
           <td></td>
           <td>√</td>
           <td>SI</td>
-          <td><button onclick="SeeProduct()" class="btn btn-primary">ver</button></td>
+          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
         </tr>
 
 
