@@ -17,14 +17,15 @@
 <body>
 
   <div class="header_insert">
+
   </div>
 
-  <main class="container">
+  <main class="mx-5 mb-5">
     <!-- filters -->
-    <form action="" class="badge-light p-2" >
+    <form action="" class="badge-light p-2  border shadow-sm">
 
-      <div class="row">
-        <div class="form-group col-md-4  pt-2">
+      <div class="row align-items-center">
+        <div class="form-group col-md-2  pt-2">
           <label for="" class="form-label">Filtrado por</label>
           <select name="" id="" class="form-select">
             <option value="">articulo</option>
@@ -32,16 +33,16 @@
           </select>
         </div>
 
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
           <label for="" class="form-label from-sw">Buscar por</label>
           <select name="" id="" class="form-select">
             <option value="">nombre</option>
             <option value="">ID</option>
-            <option value="">ISKU</option>
+            <option value="">SKU</option>
           </select>
         </div>
 
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
           <label for="">De la categoria</label>
           <select name="" id="" class="form-select">
             <option value="">Dia</option>
@@ -49,7 +50,7 @@
           </select>
         </div>
 
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
           <label for="">De la Marca</label>
           <select name="" id="" class="form-select">
             <option value="">Cotillon</option>
@@ -57,25 +58,41 @@
           </select>
         </div>
 
-        <div class="form-group col-md-4" role="group">
-          <label class="solid" for="btncheck">Estado publicado<input type="checkbox" class="btn-check ml-4"
+
+
+
+
+        <div class="form-group col-md-2" role="group">
+          <label class="solid " for="btncheck">Estado de publicacion<input type="checkbox" class="btn-check  ml-4"
               id="btncheck"></label>
         </div>
+
+        <div class="form-group col-md-2">
+          <button class="btn bg-white">Mostrar todo</button>
+        </div>
+
       </div>
-      <button type="submit" class=" btn btn-primary pl-2 m-sm-2">Filtrar</button>
-      <a href="./Add_Edit/AddEdit.html"><i id="AddButtonHome" class="btn btn-dark align-items-center ml-5">Agregar</i></a>
-      <button class="btn btn-success"><i class="bi bi-file-earmark-spreadsheet">Descargar</i></button>
-     
+
+      <div class="row">
+        <div class="col">
+          <button type="submit" class=" btn btn-primary pl-2  ">Filtrar</button>
+        </div>
+        <div class="col-auto ms-auto">
+          <a href="./Add_Edit/AddEdit.html"><i id="AddButtonHome" class="btn btn-dark ml-5">Agregar</i></a>
+          <button class="btn btn-success"><i class="bi bi-file-earmark-spreadsheet">Descargar</i></button>
+        </div>
+      </div>
     </form>
 
     <hr>
 
-    <table class="table table-striped table-bordered table-hover table-responsive">
+    <div class=" table-responsive w-100 ">
+    <table class="table table-striped table-bordered table-hover border shadow-sm">
       <thead>
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Nombre</th>
-          <th scope="col">ISKU</th>
+          <th scope="col">SKU</th>
           <th scope="col">Precio</th>
           <th scope="col">Stock</th>
           <th scope="col">Categoria</th>
@@ -87,6 +104,7 @@
           <th scope="col">Detalles</th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <th scope="row">001</th>
@@ -131,10 +149,123 @@
           <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
         </tr>
 
+        <tr>
+          <th scope="row">004</th>
+          <td>Laptop Dell Inspiron 15</td>
+          <td>DL001</td>
+          <td>20.000$</td>
+          <td>5</td>
+          <td>Computadoras</td>
+          <td>Dell</td>
+          <td>Inactivo</td>
+          <td></td>
+          <td>√</td>
+          <td>NO</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">005</th>
+          <td>Tablet Samsung Galaxy Tab</td>
+          <td>SAM001</td>
+          <td>8.000$</td>
+          <td>15</td>
+          <td>Electrónica</td>
+          <td>Samsung</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td>SI</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">006</th>
+          <td>Smartwatch Fitbit Versa 2</td>
+          <td>FT001</td>
+          <td>5.000$</td>
+          <td>20</td>
+          <td>Accesorios</td>
+          <td>Fitbit</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td>SI</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">007</th>
+          <td>Impresora Epson L380</td>
+          <td>EP001</td>
+          <td>3.000$</td>
+          <td>10</td>
+          <td>Impresoras</td>
+          <td>Epson</td>
+          <td>Inactivo</td>
+          <td></td>
+          <td>√</td>
+          <td>NO</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">008</th>
+          <td>Cámara Canon EOS M50</td>
+          <td>CN001</td>
+          <td>15.000$</td>
+          <td>5</td>
+          <td>Fotografía</td>
+          <td>Canon</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td>SI</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">009</th>
+          <td>Auriculares Sony WH-1000XM4</td>
+          <td>SO001</td>
+          <td>10.000$</td>
+          <td>15</td>
+          <td>Audio</td>
+          <td>Sony</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td>SI</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
 
+        <tr>
+          <th scope="row">010</th>
+          <td>Televisor LED LG 43"</td>
+          <td>LG002</td>
+          <td>25.000$</td>
+          <td>8</td>
+          <td>Electrónica</td>
+          <td>LG</td>
+          <td>Activo</td>
+          <td>√</td>
+          <td></td>
+          <td>SI</td>
+          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+        </tr>
       </tbody>
     </table>
+  </div>
 
+  <div class="d-flex align-content-center justify-content-center">
+    <ul class="list-unstyled">
+      <li class="d-inline">1</li>
+      <li class="d-inline">2</li>
+      <li class="d-inline">3</li>
+      <li class="d-inline">...</li>
+
+    </ul>
+  </div>
   </main>
 
   <div class="footer_insert">
