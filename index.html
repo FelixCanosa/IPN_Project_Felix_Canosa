@@ -16,9 +16,18 @@
 
 <body>
 
-  <div class="header_insert">
+  <header class="bg-light mb-4">
+    <nav class="navbar  navbar-dark ">
 
-  </div>
+      <a href="/index.html" class="navbar-brand">
+        <img src="../Recources/img/logo_iPN.svg" alt="InfineteLoop">
+      </a>
+      <div>
+        <p class="d-inline" style="font-size: 1.2em;">Hola Amin</p>
+        <i class="bi bi bi-person-square p-1" style="font-size: 1.5em;"></i>
+      </div>
+    </nav>
+  </header>
 
   <main class="mx-5 mb-5">
     <!-- filters -->
@@ -73,203 +82,207 @@
 
       </div>
 
-      <div class="row">
-        <div class="col">
-          <button type="submit" class=" btn btn-primary pl-2  ">Filtrar</button>
-        </div>
-        <div class="col-auto ms-auto">
-          <a href="./Add_Edit/AddEdit.html"><i id="AddButtonHome" class="btn btn-dark ml-5">Agregar</i></a>
-          <button class="btn btn-success"><i class="bi bi-file-earmark-spreadsheet">Descargar</i></button>
-        </div>
+
+      <div class="col">
+        <button type="submit" class=" btn btn-primary pl-2  ">Filtrar</button>
       </div>
+
     </form>
+
+    <div class="d-flex justify-content-end pt-3">
+      <a href="./Add_Edit/AddEdit.html"><i id="AddButtonHome" class="btn btn-dark">Agregar</i></a>
+      <button class="btn btn-success ml-3"><i class="bi bi-file-earmark-spreadsheet">Descargar</i></button>
+    </div>
 
     <hr>
 
     <div class=" table-responsive w-100 ">
-    <table class="table table-striped table-bordered table-hover border shadow-sm">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">SKU</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Stock</th>
-          <th scope="col">Categoria</th>
-          <th scope="col">Marca</th>
-          <th scope="col">Estado</th>
-          <th scope="col">Articulo</th>
-          <th scope="col">Producto</th>
-          <th scope="col">Envio</th>
-          <th scope="col">Detalles</th>
-        </tr>
-      </thead>
+      <table class="table table-striped table-bordered table-hover border shadow-sm">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">SKU</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Articulo</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Envio</th>
+            <th scope="col">Detalles</th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr>
-          <th scope="row">001</th>
-          <td>Smartphone Xiaomi Redmi 9</td>
-          <td>KLM1</td>
-          <td>10.000$</td>
-          <td>10</td>
-          <td>Electrónica</td>
-          <td>Xiaomi</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
-        </tr>
-        <tr>
-          <th scope="row">002</th>
-          <td>Laptop Dell Inspiron 15</td>
-          <td>H2K2</td>
-          <td>10.000$</td>
-          <td>10</td>
-          <td>Informática</td>
-          <td>Dell</td>
-          <td>Inactivo</td>
-          <td>√</td>
-          <td></td>
-          <td>NO</td>
-          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
-        </tr>
-        <tr>
-          <th scope="row">003</th>
-          <td>Camisa Hombre Adidas</td>
-          <td>FKO3</td>
-          <td>10.000$</td>
-          <td>10</td>
-          <td>Ropa</td>
-          <td>Adidas</td>
-          <td>Activo</td>
-          <td></td>
-          <td>√</td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
-        </tr>
+        <tbody>
+          <tr>
+            <th scope="row">001</th>
+            <td>Smartphone Xiaomi Redmi 9</td>
+            <td>KLM1</td>
+            <td>10.000$</td>
+            <td>10</td>
+            <td>Electrónica</td>
+            <td>Xiaomi</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
+          </tr>
+          <tr>
+            <th scope="row">002</th>
+            <td>Laptop Dell Inspiron 15</td>
+            <td>H2K2</td>
+            <td>10.000$</td>
+            <td>10</td>
+            <td>Informática</td>
+            <td>Dell</td>
+            <td>Inactivo</td>
+            <td>√</td>
+            <td></td>
+            <td>NO</td>
+            <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
+          </tr>
+          <tr>
+            <th scope="row">003</th>
+            <td>Camisa Hombre Adidas</td>
+            <td>FKO3</td>
+            <td>10.000$</td>
+            <td>10</td>
+            <td>Ropa</td>
+            <td>Adidas</td>
+            <td>Activo</td>
+            <td></td>
+            <td>√</td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
+          </tr>
 
-        <tr>
-          <th scope="row">004</th>
-          <td>Laptop Dell Inspiron 15</td>
-          <td>DL001</td>
-          <td>20.000$</td>
-          <td>5</td>
-          <td>Computadoras</td>
-          <td>Dell</td>
-          <td>Inactivo</td>
-          <td></td>
-          <td>√</td>
-          <td>NO</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-        
-        <tr>
-          <th scope="row">005</th>
-          <td>Tablet Samsung Galaxy Tab</td>
-          <td>SAM001</td>
-          <td>8.000$</td>
-          <td>15</td>
-          <td>Electrónica</td>
-          <td>Samsung</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-        
-        <tr>
-          <th scope="row">006</th>
-          <td>Smartwatch Fitbit Versa 2</td>
-          <td>FT001</td>
-          <td>5.000$</td>
-          <td>20</td>
-          <td>Accesorios</td>
-          <td>Fitbit</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-        
-        <tr>
-          <th scope="row">007</th>
-          <td>Impresora Epson L380</td>
-          <td>EP001</td>
-          <td>3.000$</td>
-          <td>10</td>
-          <td>Impresoras</td>
-          <td>Epson</td>
-          <td>Inactivo</td>
-          <td></td>
-          <td>√</td>
-          <td>NO</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-        
-        <tr>
-          <th scope="row">008</th>
-          <td>Cámara Canon EOS M50</td>
-          <td>CN001</td>
-          <td>15.000$</td>
-          <td>5</td>
-          <td>Fotografía</td>
-          <td>Canon</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-        
-        <tr>
-          <th scope="row">009</th>
-          <td>Auriculares Sony WH-1000XM4</td>
-          <td>SO001</td>
-          <td>10.000$</td>
-          <td>15</td>
-          <td>Audio</td>
-          <td>Sony</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
+          <tr>
+            <th scope="row">004</th>
+            <td>Laptop Dell Inspiron 15</td>
+            <td>DL001</td>
+            <td>20.000$</td>
+            <td>5</td>
+            <td>Computadoras</td>
+            <td>Dell</td>
+            <td>Inactivo</td>
+            <td></td>
+            <td>√</td>
+            <td>NO</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
 
-        <tr>
-          <th scope="row">010</th>
-          <td>Televisor LED LG 43"</td>
-          <td>LG002</td>
-          <td>25.000$</td>
-          <td>8</td>
-          <td>Electrónica</td>
-          <td>LG</td>
-          <td>Activo</td>
-          <td>√</td>
-          <td></td>
-          <td>SI</td>
-          <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+          <tr>
+            <th scope="row">005</th>
+            <td>Tablet Samsung Galaxy Tab</td>
+            <td>SAM001</td>
+            <td>8.000$</td>
+            <td>15</td>
+            <td>Electrónica</td>
+            <td>Samsung</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
 
-  <div class="d-flex align-content-center justify-content-center">
-    <ul class="list-unstyled">
-      <li class="d-inline">1</li>
-      <li class="d-inline">2</li>
-      <li class="d-inline">3</li>
-      <li class="d-inline">...</li>
+          <tr>
+            <th scope="row">006</th>
+            <td>Smartwatch Fitbit Versa 2</td>
+            <td>FT001</td>
+            <td>5.000$</td>
+            <td>20</td>
+            <td>Accesorios</td>
+            <td>Fitbit</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
 
-    </ul>
-  </div>
+          <tr>
+            <th scope="row">007</th>
+            <td>Impresora Epson L380</td>
+            <td>EP001</td>
+            <td>3.000$</td>
+            <td>10</td>
+            <td>Impresoras</td>
+            <td>Epson</td>
+            <td>Inactivo</td>
+            <td></td>
+            <td>√</td>
+            <td>NO</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">008</th>
+            <td>Cámara Canon EOS M50</td>
+            <td>CN001</td>
+            <td>15.000$</td>
+            <td>5</td>
+            <td>Fotografía</td>
+            <td>Canon</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">009</th>
+            <td>Auriculares Sony WH-1000XM4</td>
+            <td>SO001</td>
+            <td>10.000$</td>
+            <td>15</td>
+            <td>Audio</td>
+            <td>Sony</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">010</th>
+            <td>Televisor LED LG 43"</td>
+            <td>LG002</td>
+            <td>25.000$</td>
+            <td>8</td>
+            <td>Electrónica</td>
+            <td>LG</td>
+            <td>Activo</td>
+            <td>√</td>
+            <td></td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="d-flex align-content-center justify-content-center">
+      <ul class="list-unstyled">
+        <li class="d-inline">1</li>
+        <li class="d-inline">2</li>
+        <li class="d-inline">3</li>
+        <li class="d-inline">...</li>
+
+      </ul>
+    </div>
   </main>
 
-  <div class="footer_insert">
-  </div>
+  <footer class="footer bg-light text-dark fixed-bottom mt-auto">
+    <div class="container">
+      <p class="text-center">&copy; 2024 IPN. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <!-- Jquery src -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
