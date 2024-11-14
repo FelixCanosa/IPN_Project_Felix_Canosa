@@ -6,185 +6,295 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar&Agregar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./Recources/generalCss/General.css">
-    
+
 </head>
 
 <body>
 
     <header class="bg-light mb-4">
         <nav class="navbar  navbar-dark ">
-    
-          <a href="/index.html" class="navbar-brand">
-            <img src="../Recources/img/logo_iPN.svg" alt="InfineteLoop">
-          </a>
-          <div>
-            <p class="d-inline" style="font-size: 1.2em;">Hola Amin</p>
-            <i class="bi bi bi-person-square p-1" style="font-size: 1.5em;"></i>
-          </div>
+
+            <a href="/index.html" class="navbar-brand">
+                <img src="../Recources/img/logo_iPN.svg" alt="InfineteLoop">
+            </a>
+            <div>
+                <p class="d-inline" style="font-size: 1.2em;">Hola Amin</p>
+                <i class="bi bi bi-person-square p-1" style="font-size: 1.5em;"></i>
+            </div>
         </nav>
-      </header>
+    </header>
 
 
-    
+
 
     <div class="container bg-light mb-5 form-v">
         <form class="needs-validation" novalidate>
             <h1 id="Title" class="text-center">Modificar/Agregar</h1>
 
-            <div class="mb-3">
-                <label for="validationCustom02" class="form-label">ID</label>
-                <input type="number" class="form-control" id="validationCustom02" value="num1" required>
-                <div class="invalid-feedback">
-                    Coloca numeros
+            <div class="row">
+                <hr>
+                <h2>Genral</h2>
+
+                <div class="form-group col-md-2 mb-3">
+                    <label for="validationCustom02" class="form-label">ID</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="num1" required
+                        data-invalid-feedback="Falta números">
+                    <div class="invalid-feedback">
+                        Falta números
+                    </div>
                 </div>
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp" required
+                        data-invalid-feedback="Falta el nombre">
+                    <div class="invalid-feedback">
+                        Falta el nombre
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3 mb-3 cambiador-todo">
+                    <label for="" class="form-label from-sw">Tipo :</label>
+                    <select name="" id="" class="form-select" required data-invalid-feedback="Seleccione un tipo">
+                        <option value="Producto">Producto</option>
+                        <option value="Articulo">Articulo</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione un tipo
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">SKU</label>
+                    <input type="text" class="form-control" required data-invalid-feedback="Falta SKU">
+                    <div class="invalid-feedback">
+                        Falta SKU
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Precio</label>
+                    <input type="number" class="form-control" required data-invalid-feedback="Falta precio">
+                    <div class="invalid-feedback">
+                        Falta precio
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-md-4 mb-3 producto">
+                    <label>Talles:</label>
+                    <div class="checkbox-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opcion1"  value="opcion1" required>
+                        <label class="form-check-label" for="opcion1">Extra pequeño (XS)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opcion2" value="opcion2" required>
+                        <label class="form-check-label" for="opcion2">Pequeño (S)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opcion3" value="opcion3" required>
+                        <label class="form-check-label" for="opcion3">Mediano (M)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
+                        <label class="form-check-label" for="opcion4">Grande (L)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
+                        <label class="form-check-label" for="opcion4">Doble extra grande (XXL)</label>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="form-group col-md-4 mb-3 producto">
+                    <label for="color" class="form-label">Color:</label>
+                    <select name="color" id="color" class="form-select" required
+                        data-invalid-feedback="Seleccione un color">
+                        <option value="">Seleccione un color</option>
+                        <option value="#FF0000">Rojo</option>
+                        <option value="#008000">Verde</option>
+                        <option value="#0000FF">Azul</option>
+                        <option value="#FFFF00">Amarillo</option>
+                        <option value="#808080">Gris</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione un color
+                    </div>
+                    <div id="otro-color" style="display: none;">
+                        <label for="otro-color-input" class="form-label">Describa el color:</label>
+                        <input type="text" id="otro-color-input" name="otro-color-input" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Cantidad de Stock</label>
+                    <input type="number" class="form-control" required data-invalid-feedback="Falta cantidad de stock">
+                    <div class="invalid-feedback">
+                        Falta cantidad de stock
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="" class="form-label from-sw">Categoria :</label>
+                    <select name="" id="" class="form-select" required data-invalid-feedback="Seleccione una categoría">
+                        <option value="1">Cotillón</option>
+                        <option value="1">Inmobiliaria</option>
+                        <option value="1">Ropa</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione una categoría
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Marca</label>
+                    <input type="text" class="form-control" required data-invalid-feedback="Falta marca">
+                    <div class="invalid-feedback">
+                        Falta marca
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-7 mb-3">
+                    <label class="form-label" for="imagen">Cargar Imagen frontal:</label>
+                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
+                    <div class="invalid-feedback">
+                        Falta imagen
+                    </div>
+                </div>
+
+                <div class="form-group col-md-7 mb-3">
+                    <label class="form-label" for="imagen">Cargar Imagen trasera:</label>
+                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
+                    <div class="invalid-feedback">
+                        Falta imagen
+                    </div>
+                </div>
+
+                <div class="form-group col-md-7 mb-3">
+                    <label class="form-label" for="imagen">Cargar Imagen de detalles:</label>
+                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
+                    <div class="invalid-feedback">
+                        Falta imagen
+                    </div>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label class="form-label" for="comentario">Descripcion: </label>
+                    <textarea id="comentario" class="form-control" rows="5" required data-invalid-feedback="Falta descripción"></textarea>
+                    <div class="invalid-feedback">
+                        Falta descripción
+                    </div>
+                </div>
+                
+                <div class="form-group  mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" r>
+                    <label class="form-check-label" for="exampleCheck1">Estado en la ecommerce</label>
+                </div>
+
+                <hr class="border-dark">
+
+                <h4>Envio</h4>
+
+                <div class="form-group col-md-3 mb-3">
+                    <label for="" class="form-label">Disponible para envío</label>
+                    <div class="form-check">
+                        <label class="form-check">
+                            <input name="validar1" type="radio" class="form-check-input" required>
+                            Si
+                        </label>
+                        <label class="form-check">
+                            <input name="validar1" type="radio" class="form-check-input">
+                            No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="" class="form-label">Envío a domicilio</label>
+                    <div class="form-check">
+                        <label class="form-check">
+                            <input name="validar2" type="radio" class="form-check-input" required>
+                            Si
+                        </label>
+                        <label class="form-check">
+                            <input name="validar2" type="radio" class="form-check-input">
+                            No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="" class="form-label">Retiro en sucursal</label>
+                    <div class="form-check">
+                        <label class="form-check">
+                            <input name="validar3" type="radio" class="form-check-input" required>
+                            Si
+                        </label>
+                        <label class="form-check">
+                            <input name="validar3" type="radio" class="form-check-input">
+                            No
+                        </label>
+                    </div>
+                </div>
+
+                <hr class="border-dark">
+
+                <h4>Detalles del empaque</h4>
+
+                <div class="form-group col-md-5 mb-3">
+                    <label for="empaquetacion" class="form-label from-sw">Tipo de empaquetación:</label>
+                    <select name="empaquetacion" id="empaquetacion" class="form-select" required data-invalid-feedback="Seleccione una opción">
+                        <option value="">Seleccione una opción</option>
+                        <option value="caja">Caja de cartón</option>
+                        <option value="bolsa">Bolsa</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione una opción
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="peso" class="form-label">Peso del producto/articulo (gramos)</label>
+                    <input type="number" class="form-control" id="peso" name="peso" required data-invalid-feedback="Ingrese el peso">
+                    <div class="invalid-feedback">
+                        Ingrese el peso
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="largo" class="form-label">Largo</label>
+                    <input placeholder="cm" type="number" id="largo" name="largo" class="form-control" required data-invalid-feedback="Ingrese el largo">
+                    <div class="invalid-feedback">
+                        Ingrese el largo
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="ancho" class="form-label">Ancho</label>
+                    <input placeholder="cm" type="number" id="ancho" name="ancho" class="form-control" required data-invalid-feedback="Ingrese el ancho">
+                    <div class="invalid-feedback">
+                        Ingrese el ancho
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-3 mb-3">
+                    <label for="alto" class="form-label">Alto</label>
+                    <input placeholder="cm" type="number" id="alto" name="alto" class="form-control" required data-invalid-feedback="Ingrese el alto">
+                    <div class="invalid-feedback">
+                        Ingrese el alto
+                    </div>
+                </div>
+
+
             </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" aria-describedby="emailHelp">
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label from-sw">Tipo :</label>
-                <select name="" id="" class="form-select">
-                    <option value="">Producto</option>
-                    <option value="">Articulo</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">ISKU</label>
-                <input type="text" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Precio</label>
-                <input type="number" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="talle" class="form-label">Talle:</label>
-                <select name="talle" id="talle" class="form-select">
-                  <option value="">Seleccione un talle</option>
-                  <option value="XS">Extra pequeño (XS)</option>
-                  <option value="S">Pequeño (S)</option>
-                  <option value="M">Mediano (M)</option>
-                  <option value="L">Grande (L)</option>
-                  <option value="XL">Extra grande (XL)</option>
-                  <option value="XXL">Doble extra grande (XXL)</option>
-                </select>
-              </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Cantidad de Stock</label>
-                <input type="number" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label from-sw">Categoria :</label>
-                <select name="" id="" class="form-select">
-                    <option value="">Cotillón</option>
-                    <option value="">Inmobiliaria</option>
-                    <option value="">Ropa</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Marca</label>
-                <input type="text" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label" for="imagen">Cargar imagen:</label>
-                <input type="file" id="imagen" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label" for="comentario">Comentario: (opcional)</label>
-                <textarea id="comentario" class="form-control" rows="5"></textarea>
-            </div>
-
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Activo</label>
-            </div>
-
-            <hr class="border-dark">
-
-            <h4>Envio</h4>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Disponible para envío</label>
-                <label class="form-check">
-                    <input name="validar1" type="radio" class="form-check-input">
-                    Si
-                </label>
-                <label class="form-check">
-                    <input name="validar1" type="radio" class="form-check-input">
-                    No
-                </label>
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Envío a domicilio</label>
-                <label class="form-check">
-                    <input name="validar2" type="radio" class="form-check-input">
-                    Si
-                </label>
-                <label class="form-check">
-                    <input name="validar2" type="radio" class="form-check-input">
-                    No
-                </label>
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Retiro en sucursal</label>
-                <label class="form-check">
-                    <input name="validar3" type="radio" class="form-check-input">
-                    Si
-                </label>
-                <label class="form-check">
-                    <input name="validar3" type="radio" class="form-check-input">
-                    No
-                </label>
-            </div>
-
-            <hr class="border-dark">
-
-            <h4>Detalles del empaque</h4>
-
-            <div class="mb-3">
-                <label for="empaquetacion" class="form-label from-sw">Tipo de empaquetación:</label>
-                <select name="empaquetacion" id="empaquetacion" class="form-select">
-                    <option value="">Seleccione una opción</option>
-                    <option value="caja">Caja de cartón</option>
-                    <option value="bolsa">Bolsa</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Peso del producto/articulo (gramos)</label>
-                <input type="number" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="largo" class="form-label">Largo</label>
-                <input placeholder="cm" type="number" id="largo" name="largo" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="ancho" class="form-label">Ancho</label>
-                <input placeholder="cm" type="number" id="ancho" name="ancho" class="form-control">
-            </div>
-
-            <div class="mb-3">
-                <label for="alto" class="form-label">Alto</label>
-                <input placeholder="cm" type="number" id="alto" name="alto" class="form-control">
-            </div>
-
-            <button  class="btn btn-primary" type="submit">Modificar/Agregar</button>
+            <button class="btn btn-primary" type="submit">Modificar/Agregar</button>
         </form>
 
     </div>
@@ -194,16 +304,19 @@
 
     <footer class="footer bg-light text-dark fixed-bottom mt-auto">
         <div class="container">
-          <p class="text-center">&copy; 2024 IPN. Todos los derechos reservados.</p>
+            <p class="text-center">&copy; 2024 IPN. Todos los derechos reservados.</p>
         </div>
-      </footer>
+    </footer>
 
-    <script src="../Recources/JS/ValidatedFrom.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="../Recources/JS/Header&Footer.js"></script>
+    <script src="../Recources/JS/Frorm.js"></script>
+    <script src="../Recources/JS/ValidatedFrom.js"></script>
+
 </body>
 
 </html>

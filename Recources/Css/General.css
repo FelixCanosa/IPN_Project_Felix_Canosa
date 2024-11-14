@@ -27,3 +27,18 @@
 
 
 /* -----end----- */
+
+/* SVG color */
+
+.my-svg-red{
+  filter: url(#filtro); /* para IE */
+  filter: invert(40%) sepia(130%) saturate(500%) hue-rotate(320deg);
+}
+
+.my-svg-green{
+  filter: invert(60%) sepia(100%) saturate(400%) hue-rotate(420deg);
+}
+
+.my-svg-grid{
+  filter: invert(60%) sepia(100%) saturate(400%) hue-rotate(10deg);
+}
