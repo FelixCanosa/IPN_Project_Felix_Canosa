@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Recources/generalCss/General.css">
+  <link rel="stylesheet" href="./Recources/Css/General.css">
 
 
 </head>
@@ -34,7 +34,7 @@
     <form action="" class="badge-light p-2  border shadow-sm">
 
       <div class="row align-items-center">
-        
+
         <div class="form-group col-md-2  pt-2">
           <label for="" class="form-label">Filtrado por</label>
           <select name="" id="" class="form-select">
@@ -43,13 +43,9 @@
           </select>
         </div>
 
-        <div class="form-group col-md-2">
-          <label for="" class="form-label from-sw">Buscar por</label>
-          <select name="" id="" class="form-select">
-            <option value="">nombre</option>
-            <option value="">ID</option>
-            <option value="">SKU</option>
-          </select>
+        <div class="form-group col-md-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre/SKU/ID">
         </div>
 
         <div class="form-group col-md-2">
@@ -98,7 +94,8 @@
     <hr>
 
     <div class=" table-responsive w-100 ">
-      <table class="table table-striped table-bordered table-hover border shadow-sm">
+      <table class="table table-striped table-bordered table-hover border shadow-sm" id="tabla-productos">
+
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -109,14 +106,14 @@
             <th scope="col">Categoria</th>
             <th scope="col">Marca</th>
             <th scope="col">Estado</th>
-            <th scope="col">Articulo</th>
-            <th scope="col">Producto</th>
+            <th scope="col">Tipo</th>
             <th scope="col">Envio</th>
             <th scope="col">Detalles</th>
           </tr>
         </thead>
 
-        <tbody>
+        <!-- Cuerpo de la tabla -->
+        <tbody id="cuerpo-tabla">
           <tr>
             <th scope="row">001</th>
             <td>Smartphone Xiaomi Redmi 9</td>
@@ -126,8 +123,7 @@
             <td>Electrónica</td>
             <td>Xiaomi</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Producto</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
           </tr>
@@ -140,8 +136,7 @@
             <td>Informática</td>
             <td>Dell</td>
             <td>Inactivo</td>
-            <td>√</td>
-            <td></td>
+            <td>Articulo</td>
             <td>NO</td>
             <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
           </tr>
@@ -154,8 +149,7 @@
             <td>Ropa</td>
             <td>Adidas</td>
             <td>Activo</td>
-            <td></td>
-            <td>√</td>
+            <td>Producto</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProdctDetails.html"><button class="btn btn-primary">ver</button></a></td>
           </tr>
@@ -169,8 +163,7 @@
             <td>Computadoras</td>
             <td>Dell</td>
             <td>Inactivo</td>
-            <td></td>
-            <td>√</td>
+            <td>Articulo</td>
             <td>NO</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -184,8 +177,7 @@
             <td>Electrónica</td>
             <td>Samsung</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Producto</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -199,8 +191,7 @@
             <td>Accesorios</td>
             <td>Fitbit</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Articulo</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -214,8 +205,7 @@
             <td>Impresoras</td>
             <td>Epson</td>
             <td>Inactivo</td>
-            <td></td>
-            <td>√</td>
+            <td>Articulo</td>
             <td>NO</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -229,8 +219,7 @@
             <td>Fotografía</td>
             <td>Canon</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Articulo</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -244,8 +233,7 @@
             <td>Audio</td>
             <td>Sony</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Producto</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -259,8 +247,21 @@
             <td>Electrónica</td>
             <td>LG</td>
             <td>Activo</td>
-            <td>√</td>
-            <td></td>
+            <td>Producto</td>
+            <td>SI</td>
+            <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">010</th>
+            <td>Televisor LED LG 43"</td>
+            <td>LG002</td>
+            <td>25.000$</td>
+            <td>8</td>
+            <td>Electrónica</td>
+            <td>LG</td>
+            <td>Activo</td>
+            <td>Producto</td>
             <td>SI</td>
             <td><a href="./ProductDetail/ProductDetails.html"><button class="btn btn-primary">Ver</button></a></td>
           </tr>
@@ -268,13 +269,10 @@
       </table>
     </div>
 
+    <!-- Paginación -->
     <div class="d-flex align-content-center justify-content-center">
-      <ul class="list-unstyled">
-        <li class="d-inline">1</li>
-        <li class="d-inline">2</li>
-        <li class="d-inline">3</li>
-        <li class="d-inline">...</li>
-
+      <ul class="list-unstyled" id="paginacion">
+        <!-- Números de página generados dinámicamente -->
       </ul>
     </div>
   </main>
@@ -289,7 +287,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-  <script src="./Recources/JS/Header&Footer.js"></script>
+  <script src="./Recources/JS/Form.js"></script>
+  <script src="./Recources/JS/Logic.js"></script>
 </body>
 
 </html>

@@ -42,3 +42,14 @@
 .my-svg-grid{
   filter: invert(60%) sepia(100%) saturate(400%) hue-rotate(10deg);
 }
+
+
+/* color de letra de paginado*/
+
+.text-color{
+  color: aliceblue;
+}
+
+.text-color:hover{
+  color: aliceblue;
+}

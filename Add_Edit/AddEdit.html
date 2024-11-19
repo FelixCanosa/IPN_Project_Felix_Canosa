@@ -32,7 +32,7 @@
 
     <div class="container bg-light mb-5 form-v">
         <form class="needs-validation" novalidate>
-            <h1 id="Title" class="text-center">Modificar/Agregar</h1>
+            <h1 id="Title-from" class="text-center"></h1>
 
             <div class="row">
                 <hr>
@@ -84,63 +84,6 @@
                 </div>
 
 
-
-                <div class="form-group col-md-4 mb-3 producto">
-                    <label>Talles:</label>
-                    <div class="checkbox-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="opcion1"  value="opcion1" required>
-                        <label class="form-check-label" for="opcion1">Extra pequeño (XS)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="opcion2" value="opcion2" required>
-                        <label class="form-check-label" for="opcion2">Pequeño (S)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="opcion3" value="opcion3" required>
-                        <label class="form-check-label" for="opcion3">Mediano (M)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
-                        <label class="form-check-label" for="opcion4">Grande (L)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
-                        <label class="form-check-label" for="opcion4">Doble extra grande (XXL)</label>
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="form-group col-md-4 mb-3 producto">
-                    <label for="color" class="form-label">Color:</label>
-                    <select name="color" id="color" class="form-select" required
-                        data-invalid-feedback="Seleccione un color">
-                        <option value="">Seleccione un color</option>
-                        <option value="#FF0000">Rojo</option>
-                        <option value="#008000">Verde</option>
-                        <option value="#0000FF">Azul</option>
-                        <option value="#FFFF00">Amarillo</option>
-                        <option value="#808080">Gris</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Seleccione un color
-                    </div>
-                    <div id="otro-color" style="display: none;">
-                        <label for="otro-color-input" class="form-label">Describa el color:</label>
-                        <input type="text" id="otro-color-input" name="otro-color-input" class="form-control" />
-                    </div>
-                </div>
-
-                <div class="form-group col-md-3 mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Cantidad de Stock</label>
-                    <input type="number" class="form-control" required data-invalid-feedback="Falta cantidad de stock">
-                    <div class="invalid-feedback">
-                        Falta cantidad de stock
-                    </div>
-                </div>
-
-
                 <div class="form-group col-md-3 mb-3">
                     <label for="" class="form-label from-sw">Categoria :</label>
                     <select name="" id="" class="form-select" required data-invalid-feedback="Seleccione una categoría">
@@ -152,7 +95,7 @@
                         Seleccione una categoría
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="exampleInputPassword1" class="form-label">Marca</label>
                     <input type="text" class="form-control" required data-invalid-feedback="Falta marca">
@@ -160,43 +103,99 @@
                         Falta marca
                     </div>
                 </div>
-                
-                <div class="form-group col-md-7 mb-3">
-                    <label class="form-label" for="imagen">Cargar Imagen frontal:</label>
-                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
-                    <div class="invalid-feedback">
-                        Falta imagen
-                    </div>
-                </div>
 
-                <div class="form-group col-md-7 mb-3">
-                    <label class="form-label" for="imagen">Cargar Imagen trasera:</label>
-                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
-                    <div class="invalid-feedback">
-                        Falta imagen
-                    </div>
-                </div>
+ 
 
-                <div class="form-group col-md-7 mb-3">
-                    <label class="form-label" for="imagen">Cargar Imagen de detalles:</label>
-                    <input type="file" id="imagen" class="form-control" required data-invalid-feedback="Falta imagen">
-                    <div class="invalid-feedback">
-                        Falta imagen
-                    </div>
-                </div>
-                
+
+
                 <div class="form-group mb-3">
                     <label class="form-label" for="comentario">Descripcion: </label>
-                    <textarea id="comentario" class="form-control" rows="5" required data-invalid-feedback="Falta descripción"></textarea>
+                    <textarea id="comentario" class="form-control" rows="5" required
+                        data-invalid-feedback="Falta descripción"></textarea>
                     <div class="invalid-feedback">
                         Falta descripción
                     </div>
                 </div>
-                
+
                 <div class="form-group  mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" r>
                     <label class="form-check-label" for="exampleCheck1">Estado en la ecommerce</label>
                 </div>
+
+                <hr>
+                <table id="tabla-productos" class="table table-bordered table-striped">
+                    <thead >
+                      <tr>
+                        <th class="col-md-2">Stocks</th>
+                        <th class="col-md-3 producto">Talles</th>
+                        <th class="col-md-2 producto">Colores</th>
+                        <th class="col-md-6">Imágenes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <div class="form-group  mb-3">
+                                <input type="number" class="form-control" required data-invalid-feedback="Falta cantidad de stock">
+                                <div class="invalid-feedback">
+                                    Falta cantidad de stock
+                                </div>
+                            </div>
+                        </td>
+                        <td class="producto">
+                            <div class="form-group mb-3">
+                                <div class="checkbox-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="opcion1" value="opcion1" required>
+                                        <label class="form-check-label" for="opcion1">Extra pequeño (XS)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="opcion2" value="opcion2" required>
+                                        <label class="form-check-label" for="opcion2">Pequeño (S)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="opcion3" value="opcion3" required>
+                                        <label class="form-check-label" for="opcion3">Mediano (M)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
+                                        <label class="form-check-label" for="opcion4">Grande (L)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="opcion4" value="opcion4" required>
+                                        <label class="form-check-label" for="opcion4">Doble extra grande (XXL)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="producto">
+                          <select name="color" id="color" >
+                            <option value="">Seleccione un color</option>
+                            <option value="#FF0000">Rojo</option>
+                            <option value="#008000">Verde</option>
+                            <option value="#0000FF">Azul</option>
+                            <option value="#FFFF00">Amarillo</option>
+                            <option value="#808080">Gris</option>
+                          </select>
+                        </td>
+                        <td>
+                          <label class="form-label" for="imagen-frontal">Imagen frontal:</label>
+                          <input type="file" class="form-control" id="imagen-frontal">
+                          <br>
+                          <label class="form-label" for="imagen-trasera">Imagen trasera:</label>
+                          <input type="file" class="form-control" id="imagen-trasera">
+                          <br>
+                          <label class="form-label" for="imagen-detalles">Imagen detalles:</label>
+                          <input type="file" class="form-control" id="imagen-detalles">
+                        </td>
+                        
+                          
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- <button class="btn btn-primary" id="agregar-columna">Agregar columna</button> -->
+                  <i class="bi bi-plus-circle btn fw-bold fs-3 text-success" id="agregar-columna">Agregar columna</i>
 
                 <hr class="border-dark">
 
@@ -215,7 +214,7 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="" class="form-label">Envío a domicilio</label>
                     <div class="form-check">
@@ -229,7 +228,7 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="" class="form-label">Retiro en sucursal</label>
                     <div class="form-check">
@@ -250,7 +249,8 @@
 
                 <div class="form-group col-md-5 mb-3">
                     <label for="empaquetacion" class="form-label from-sw">Tipo de empaquetación:</label>
-                    <select name="empaquetacion" id="empaquetacion" class="form-select" required data-invalid-feedback="Seleccione una opción">
+                    <select name="empaquetacion" id="empaquetacion" class="form-select" required
+                        data-invalid-feedback="Seleccione una opción">
                         <option value="">Seleccione una opción</option>
                         <option value="caja">Caja de cartón</option>
                         <option value="bolsa">Bolsa</option>
@@ -259,34 +259,38 @@
                         Seleccione una opción
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
-                    <label for="peso" class="form-label">Peso del producto/articulo (gramos)</label>
-                    <input type="number" class="form-control" id="peso" name="peso" required data-invalid-feedback="Ingrese el peso">
+                    <label for="peso" class="form-label">Peso (gramos)</label>
+                    <input type="number" class="form-control" id="peso" name="peso" required
+                        data-invalid-feedback="Ingrese el peso">
                     <div class="invalid-feedback">
                         Ingrese el peso
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="largo" class="form-label">Largo</label>
-                    <input placeholder="cm" type="number" id="largo" name="largo" class="form-control" required data-invalid-feedback="Ingrese el largo">
+                    <input placeholder="cm" type="number" id="largo" name="largo" class="form-control" required
+                        data-invalid-feedback="Ingrese el largo">
                     <div class="invalid-feedback">
                         Ingrese el largo
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="ancho" class="form-label">Ancho</label>
-                    <input placeholder="cm" type="number" id="ancho" name="ancho" class="form-control" required data-invalid-feedback="Ingrese el ancho">
+                    <input placeholder="cm" type="number" id="ancho" name="ancho" class="form-control" required
+                        data-invalid-feedback="Ingrese el ancho">
                     <div class="invalid-feedback">
                         Ingrese el ancho
                     </div>
                 </div>
-                
+
                 <div class="form-group col-md-3 mb-3">
                     <label for="alto" class="form-label">Alto</label>
-                    <input placeholder="cm" type="number" id="alto" name="alto" class="form-control" required data-invalid-feedback="Ingrese el alto">
+                    <input placeholder="cm" type="number" id="alto" name="alto" class="form-control" required
+                        data-invalid-feedback="Ingrese el alto">
                     <div class="invalid-feedback">
                         Ingrese el alto
                     </div>
@@ -294,7 +298,7 @@
 
 
             </div>
-            <button class="btn btn-primary" type="submit">Modificar/Agregar</button>
+            <button class="btn btn-primary"  type="submit">Listo</button>
         </form>
 
     </div>
@@ -314,7 +318,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="../Recources/JS/Header&Footer.js"></script>
-    <script src="../Recources/JS/Frorm.js"></script>
+    <script src="../Recources/JS/Form.js"></script>
     <script src="../Recources/JS/ValidatedFrom.js"></script>
 
 </body>
