@@ -94,13 +94,13 @@ $(document).ready(function () {
     var celdaImagen = $("<td>");
     celdaImagen.html(`
       <label class="form-label" for="imagen-frontal">Imagen frontal:</label>
-      <input type="file" class="form-control" id="imagen-frontal">
+      <input type="text" class="form-control" id="imagen-frontal" placeholder="URL">
       <br>
       <label class="form-label" for="imagen-trasera">Imagen trasera:</label>
-      <input type="file" class="form-control" id="imagen-trasera">
+      <input type="text" class="form-control" id="imagen-trasera" placeholder="URL">
       <br>
       <label class="form-label" for="imagen-detalles">Imagen detalles:</label>
-      <input type="file" class="form-control" id="imagen-detalles">
+      <input type="text" class="form-control" id="imagen-detalles" placeholder="URL">
     `);
 
     nuevaFila.append(celdaStock);
